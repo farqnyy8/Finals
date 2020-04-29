@@ -31,8 +31,6 @@ function showAuthorInfo() {
   if (!showingAuthorInfo) {
     let au = document.getElementById('author');
     au.innerHTML = '';
-    au.style.border = '1px solid #4e4a3b';
-    au.style.borderRadius = '1rem';
 
     let child = document.createElement('div');
     child.setAttribute('id', 'authorChild');

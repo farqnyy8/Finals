@@ -69,6 +69,7 @@ div.bodyParagraph{
   background-image: linear-gradient(lightblue); /*repeating-radial-gradient(lightblue, lightgreen, yellow, pink);*/
   width: inherit;
   height: 100px;
+  border-radius: 1rem;
 }
 
 .extra{
@@ -120,6 +121,9 @@ div.bodyParagraph{
   position: fixed;
   right: 1rem;
   width: 10%;
+  border-style: solid;
+  border-color: #4e4a3b;
+  border-radius: 1rem;
 }
 
 #author img{
