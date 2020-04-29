@@ -1,3 +1,8 @@
+/*
+Name: Faruq Hammed
+Date: 04/27/2020
+*/
+
 let showingAuthorInfo = false, count = 0, chaos;
 
 function addToBlue() {
