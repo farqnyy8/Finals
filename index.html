@@ -1,0 +1,137 @@
+<!--
+Name: Faruq Hammed
+Date: 04/27/2020
+
+1. Javascript: is a scripting or programming language that allows you to implement complex features
+on web pages — every time a web page does more than just sit there and display static information for
+you to look at — displaying timely content updates, interactive maps, animated 2D/3D graphics, scrolling
+video jukeboxes, etc. (retrieved from https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript)
+
+2. HTML: is the most basic building block of the Web. It defines the meaning and structure of web content
+ (retrieved from https://developer.mozilla.org/en-US/docs/Web/HTML)
+
+3. CSS: Cascading Style Sheets (CSS) is a stylesheet language used to describe the presentation of a
+document written in HTML or XML. CSS describes how elements should be rendered on screen, on paper, in
+ speech, or on other media. (retrieved from https://developer.mozilla.org/en-US/docs/Web/CSS)
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="author" content="Faruq Hammed">
+  <meta name="Date Created" content="04/27/2020">
+  <meta name="description" content="Finals">
+  <link rel="stylesheet" href="styles/master.css">
+  <link href="https://fonts.googleapis.com/css?family=Comic+Neue|Dosis|Inconsolata&display=swap" rel="stylesheet">
+   <script src="scripts/master.js" charset="utf-8"></script>
+  <title>The3rdMoon: Internet Resources Finals</title>
+</head>
+<body>
+  <header>
+    <h1>The3rdMoon: Internet Resources Finals</h1>
+  </header>
+    <div class="pageBody" onmouseenter="addHighlight(this)">
+      <div id="author" onclick="showAuthorInfo()">Click here for Author Info: </div>
+      <section id="top">
+        <div id="topDiv">
+          <h2>Projects Without Javascript</h2>
+          <div class="project">
+            <img class="left" src="images/blue.jpg" alt="First Nice Project">
+            <h3>Blue Table Style Project</h3>
+            <p class="bodyParagraph">
+              This was my first <strong>amazing</strong> project this semester. I had learned some CSS outside the
+              classroom and I wanted to test my skills. <span class="extra">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pulvinar sapien et ligula
+                ullamcorper malesuada. Pellentesque eu tincidunt tortor aliquam nulla facilisi cras fermentum odio. Purus in mollis nunc sed id. Semper feugiat nibh sed
+                pulvinar proin gravida hendrerit lectus. Semper risus in hendrerit gravida rutrum quisque non tellus. Lectus proin nibh nisl condimentum id.
+                Egestas sed tempus urna et. Scelerisque mauris pellentesque pulvinar pellentesque habitant morbi. Dui accumsan sit amet nulla facilisi morbi.
+                Neque convallis a cras semper auctor neque vitae.
+              </span>
+            </p>
+            <div id="divBlue"></div>
+            <button onclick="addToBlue()" id="addToBlue">Click here to learn more</button>
+          </div>
+          <div class="project">
+            <img src="images/table.jpg" alt="" class="right">
+            <h3>Table Project</h3>
+            <p class="bodyParagraph">
+              This project was another <strong>cool</strong> project. Dr. Zhang had taught us about tables. <span class="extra" id="secondParagraph">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pulvinar sapien et ligula
+                ullamcorper malesuada. Pellentesque eu tincidunt tortor aliquam nulla facilisi cras fermentum odio. Purus in mollis nunc sed id. Semper feugiat nibh sed
+                pulvinar proin gravida hendrerit lectus. <strong onclick="changeBgColor('secondParagraph', 'burlywood')">Click here to change this color</strong> Semper risus in hendrerit gravida rutrum quisque non tellus. Lectus proin nibh nisl condimentum id.
+                Egestas sed tempus urna et. Scelerisque mauris pellentesque pulvinar pellentesque habitant morbi. Dui accumsan sit amet nulla facilisi morbi.
+                Neque convallis a cras semper auctor neque vitae.
+              </span>
+            </p>
+          </div>
+        </div>
+      </section>
+      <hr>
+      <section id='bottom'>
+        <div id="botDiv">
+          <h2>Projects With Javascript</h2>
+          <div class="project">
+            <img class="left" src="images/birdFlash.GIF" alt="BirdFlash">
+            <h3>BirdFlash Project</h3>
+            <p class="bodyParagraph">
+              This was the first time I used Javascript in a class project. I added a functionality where the pictures on the webpage changed
+              as I clicked on button. I was very proud of thie project, because it was the first time I had written some Javascript code.
+              <span class="extra" id="toBeHidden">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pulvinar sapien et ligula
+                ullamcorper malesuada. Pellentesque eu tincidunt tortor aliquam nulla facilisi cras fermentum odio. Purus in mollis nunc sed id. Semper feugiat nibh sed
+                pulvinar proin gravida hendrerit lectus. <strong onclick="makeInvisible('toBeHidden')">Click here to hide this part</strong> Semper risus in hendrerit gravida rutrum quisque non tellus. Lectus proin nibh nisl condimentum id.
+                Egestas sed tempus urna et. Scelerisque mauris pellentesque pulvinar pellentesque habitant morbi. Dui accumsan sit amet nulla facilisi morbi.
+                Neque convallis a cras semper auctor neque vitae.
+              </span>
+            </p>
+          </div>
+          <div class="project" id="firstJS">
+            <img src="images/firstJS.PNG" alt="First Big JS" class="right">
+            <h3>First Big Javascript Project</h3>
+            <p class="bodyParagraph">
+              This was my first <strong>big</strong> Javascript project. I was working with <strong>Knia Williams</strong> to create a webpage
+              that had at least fout html features. We could (a) change the background color, (b) change the font color of the paragraphs, (c) generate
+              the random texts from and array of name of our class members, and mostly amazingly, (d) we could change the images on the left and
+              right at will. This project, too, had a number of pretty cool css features.
+            </p>
+          </div>
+          <div class="project" id="compassGame">
+            <img src="images/compassGame.PNG" alt="Compass Game" class="left">
+            <h3>Compass Game</h3>
+            <p class="bodyParagraph">
+              This project was a solution to on eof the projects of a book I was usign to learn Web Development: Web
+              Development with HTML5, CSS3, and Javascript. I used a bunch of <code>div</code> tags to create the table
+              and I used Javascript to add the change image functionality. I submitted in place of a class project. Actually,
+              I added it to the project immediately above and submitted both of them as my second group project. Of course, Hafsah
+              Williams, my teammate, did her part, too. Mostly, Hafsah came up with things to do -- Project Manager -- and I did them
+              -- Software Engineer.
+            </p>
+          </div>
+          <div class="project">
+            <img src="images/walkthrough.gif" alt="Walkthrough of Final Big Project" class="right">
+            <h3>Final Spring 2020 Project (not finals)</h3>
+            <p class="bodyParagraph">
+              I call this <strong>Chaotic-Beauty</strong>. I mashed up a lot of CSS and Javascript to make stuff change dynamically.
+              It is an addition to the Big Javascript Project and Compass Game. <strong>Hover your mouse below this paragraph for a taste of its chaos</strong>
+
+              <span class="extra">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pulvinar sapien et ligula
+                ullamcorper malesuada. Pellentesque eu tincidunt tortor aliquam nulla facilisi cras fermentum odio. Purus in mollis nunc sed id. Semper feugiat nibh sed
+                pulvinar proin gravida hendrerit lectus. <strong>It is just amazing!</strong> Semper risus in hendrerit gravida rutrum quisque non tellus. Lectus proin nibh nisl condimentum id.
+                Egestas sed tempus urna et. Scelerisque mauris pellentesque pulvinar pellentesque habitant morbi. Dui accumsan sit amet nulla facilisi morbi.
+                Neque convallis a cras semper auctor neque vitae.
+              </span>
+            </p>
+            <div class="bodyParagraph" onmouseenter="change(this)" onmouseleave="stop(this)"></div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer onmouseenter="//swap()">
+      <h1>Here lies the end of Internet Resources Class</h1>
+    </footer>
+</body>
+</html>

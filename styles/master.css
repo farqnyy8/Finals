@@ -1,0 +1,128 @@
+/*
+
+*/
+/**********Tag selector*********/
+body{
+  background-color: azure;
+  color: #4e4a3b;
+  padding: 0.5rem;
+  font-family: 'Comic Neue', cursive;
+  position: relative;
+  line-height: 1.5;
+}
+
+header, footer{
+  text-align: center;
+  color: #4e4a3b;
+  background-color: lightblue;
+  padding: 0.5rem;
+  border: 2px solid #4e4a3b;
+  border-radius: 0.5rem;
+}
+
+h1{
+  font-family: 'Dosis', sans-serif;
+}
+
+h2{
+  font-family: 'Dosis', sans-serif;
+  margin-bottom: 50px;
+  color: #38627e;
+}
+
+h3{
+  margin-bottom: 30px;
+  color: #38627e;
+}
+
+hr{
+  border-style: none;
+  border-bottom: dotted;
+  border-width: 10px;
+  border-color: #4e4a3b;
+  width: 10%;
+  margin: 50px auto;
+}
+
+section img{
+  width: 30%;
+  height: inherit;
+  border-style: solid;
+  border-color: #4e4a3b;
+  border-width: thick;
+}
+
+p{
+  text-align: justify;
+}
+
+span > strong{
+  color: #4e4a3b;
+}
+
+/**********class selectors*****/
+/*.bodyParagraph{
+  margin: auto auto;
+}*/
+
+div.bodyParagraph{
+  background-image: linear-gradient(lightblue); /*repeating-radial-gradient(lightblue, lightgreen, yellow, pink);*/
+  width: inherit;
+  height: 100px;
+}
+
+.extra{
+  color: #eeeeee;
+}
+
+.left{
+  float: left;
+  margin-right: 10px;
+}
+
+.project{
+  margin: 0 auto 100px;
+}
+
+.right{
+  float: right;
+  margin-left: 10px;
+}
+
+.pageBody{
+  width: 60%;
+  margin: 0 auto;
+}
+
+/**********ids****************/
+
+#addToBlue{
+  background-color: lightblue;
+  padding: 0.5rem;
+  color: #4e4a3b;
+  border-color: #4e4a3b;
+  border-radius: 0.5rem;
+}
+
+#addToBlue:hover{
+  background-color: azure;
+}
+
+#divBlue{
+  visibility: hidden;
+  margin-top: 0.05rem;
+}
+
+#author{
+  float: right;
+  background-color: lightblue;
+  padding: 1rem;
+  position: fixed;
+  right: 1rem;
+  width: 10%;
+}
+
+#author img{
+  width: 100%;
+  height: 100%;
+}
