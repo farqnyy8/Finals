@@ -3,7 +3,9 @@ Name: Faruq Hammed
 Date: 04/27/2020
 */
 
-let showingAuthorInfo = false, count = 0, chaos;
+let showingAuthorInfo = false,
+  count = 0,
+  chaos;
 
 function addToBlue() {
   let parent = document.getElementById('divBlue');
@@ -95,16 +97,14 @@ function genColorHsl() {
 
 function changeLinearGradient(elm) {
   if (count % 3 == 0) {
-    elm.style.backgroundImage = 'repeating-radial-gradient( circle'
-      + genColor() + ', ' + genColorHsl() + ', ' + genColor() + ') ';
-  }
-  else if (count % 3 == 1) {
-    elm.style.backgroundImage = 'repeating-conic-gradient('
-      + genColorHsl() + ', ' + genColor() + ', ' + genColorHsl() + ') ';
-  }
-  else if (count % 3 == 2) {
-    elm.style.backgroundImage = 'repeating-linear-gradient( to right, '
-      + genColor() + ', ' + genColorHsl() + ', ' + genColor() + ', ' + genColorHsl() + ')';
+    elm.style.backgroundImage = 'repeating-radial-gradient( circle' +
+      genColor() + ', ' + genColorHsl() + ', ' + genColor() + ') ';
+  } else if (count % 3 == 1) {
+    elm.style.backgroundImage = 'repeating-conic-gradient(' +
+      genColorHsl() + ', ' + genColor() + ', ' + genColorHsl() + ') ';
+  } else if (count % 3 == 2) {
+    elm.style.backgroundImage = 'repeating-linear-gradient( to right, ' +
+      genColor() + ', ' + genColorHsl() + ', ' + genColor() + ', ' + genColorHsl() + ')';
   }
   count += 1;
 }
